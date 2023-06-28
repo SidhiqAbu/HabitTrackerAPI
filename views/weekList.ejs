@@ -1,0 +1,29 @@
+
+        <link rel="stylesheet" type="text/css" href="/css/weekTask.css">
+
+
+        <%for(let habit of habits){%>
+                <h3 id="habitName"><%=habit.name%></h3>
+                <div id="weekTasks">
+                        <%for(let state of habit.status){%>
+                                <div id="HabitWeekList">
+                                        <p><%=state.Date%></p>
+                                        <label for="taskStatus">Status:</label>
+                                                <select name="taskStatus" id="<%=state._id%>" class="weekListTable">
+                                                <option value="none" selected disabled hidden><%=state.Status%></option>
+                                                <option value="Done">Done</option>
+                                                <option value="Not Done">Not Done</option>
+                                                </select>
+                                </div>
+                        <%}%>
+                </div>
+        <%}%>
+
+        
+        <script src="/js/weekList.js"></script>
+
+
+
+
+        
+       

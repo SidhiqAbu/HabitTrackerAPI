@@ -1,0 +1,53 @@
+
+        <link rel="stylesheet" type="text/css" href="/css/home.css">
+
+        
+        <!--  HOME CONTAINER IS USED TO DISPLAY THE TODAY CURRENT TASKS........... -->
+        <div id="homeContainer">
+                <h2>Current Tasks</h2>
+                <div id="HabitContainer">
+                        <% let i=0 %>
+                        <% for( let task of tasks){%>
+                                <div class="habitInfo" id="habit-<%=task._id%>">
+                                        <p><%=task.TaskName %></p>
+                                        <p id="days-<%=currentSt[i]._id%>">Days:<%=task.Days%>/<%=task.targetTask%></p>
+                                        <p><%=task.catogiry%></p>
+                                        <p><%=task.time%></p>
+                                                <p>
+                                                        <label for="taskStatus">Status:</label>
+                                                        <select name="taskStatus" id="<%=currentSt[i]._id%>" class="habitStatus">
+                                                        <option value="none" selected disabled hidden><%=currentSt[i].Status%></option>
+                                                        <option value="Done">Done</option>
+                                                        <option value="Not Done">Not Done</option>
+                                                        </select>
+                                                </p>
+                                        <p class="deleteHF" id="<%=task._id%>">Delete</p>
+                                </div>
+                                <% i++ %>
+                        <%}%>
+                </div>
+
+        </div>  
+
+
+
+
+
+<!-- FOOTER PART TO CREATION OF NEW HABITS......... -->
+        <div id="footer">
+                <p>Add Tasks</p>
+                <form id="HabitCF">
+                        <input type="text" name="TaskName" placeholder="Task Name">
+                        <input type="number" name="targetTask" placeholder="Task goal in days">
+                                
+                                <label for="taskCatogiry">Task Catogiry : </label>
+                                <select name="taskCatogiry" id="status">
+                                <option value="Daily">Daily</option>
+                                <option value="Weekly">Weekly</option>
+                                <option value="Monthly">Monthly</option>
+                                </select>
+                        <input type="time" name="time" placeholder="Time">
+                        <input type="submit" value="submit">
+                </form>
+            </div>
+        <script src="/js/home.js"></script>
