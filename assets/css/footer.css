@@ -1,0 +1,10 @@
+#footer {
+  background-color: lightgray;
+  box-shadow: 1px 1px 1px 1px bisque;
+  position: absolute;
+  bottom: 0px;
+  width: 99.8%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=footer.css.map */

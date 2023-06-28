@@ -1,0 +1,52 @@
+#homeContainer {
+  text-align: center;
+  
+}
+
+#HabitContainer{
+  height: 450px;
+  overflow-y:scroll;
+}
+
+.habitInfo{
+  display: flex;
+  border: 2px solid pink;
+  justify-content: space-evenly;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+
+#footer {
+  background-color:rgba(184, 184, 140, 0.764);
+  box-shadow: 1px 1px 1px  bisque;
+  position: absolute;
+  bottom: 5px;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+#addTasktables{
+  margin: 10px;
+}
+
+
+#status{
+  border: none;
+  cursor: pointer;
+}
+
+.deleteHF{
+  cursor: pointer;
+}
+/*# sourceMappingURL=footer.css.map */
+
+
+/*# sourceMappingURL=home.css.map */
